@@ -30,7 +30,7 @@ public class AddonController(
 {
     private string GetBaseUrl()
     {
-        return $"{Request.Scheme}://{Request.Host}{Request.PathBase}";
+        return $"https://{Request.Host}{Request.PathBase}";
     }
 
     private static MetaDto MapToMeta(
